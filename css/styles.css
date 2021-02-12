@@ -1,0 +1,246 @@
+.page {
+  color: var(--primary-text-color);
+  font-family: 'Roboto', sans-serif;
+}
+
+:root {
+  --primary-text-color: #757575;
+  --text-nav-title-color: #212121;
+  --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --fotter-contacts: rgba (255, 255, 255, 0.6);
+  --logo: #000000;
+  --background: #2f303a;
+  --section-background: #f5f4fa;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--text-nav-title-color);
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--text-nav-title-color);
+}
+
+/* header */
+.part-logo {
+  font-family: 'Raleway', sans-serif;
+
+  color: var(--accent-color);
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+
+  color: var(--logo);
+}
+
+/* site nav */
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
+.site-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.site-nav .link {
+  color: var(--text-nav-title-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.nav-address {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+}
+
+.nav-address .link {
+  font-style: normal;
+
+  color: var(--primary-text-color);
+}
+
+.nav-address .link:hover,
+.nav-address .link:focus {
+  color: var(--accent-color);
+}
+
+/* main */
+/* hero */
+.hero {
+  background-color: var(--background);
+  /* text-align: center; */
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.hero-text {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.06em;
+
+  color: var(--white-color);
+}
+
+/* section advantages */
+
+.visually-hidden {
+  display: none;
+}
+
+.advantages .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.advantages .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.title {
+  color: var(--text-nav-title-color);
+}
+
+.title-text {
+  color: var(--primary-text-color);
+}
+
+/* section occupation */
+.occupation .title,
+.team .main-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* section team */
+
+.team .sub-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+.team {
+  background-color: var(--section-background);
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--background);
+}
+
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 26px;
+
+  color: var(--white-color);
+}
+
+.footer-text {
+  font-weight: normal;
+  font-size: 14px;
+  font-style: normal;
+
+  color: var(--white-color);
+}
+
+.footer-address .link {
+  font-style: normal;
+
+  color: var(--fotter-contacts);
+}
+
+.footer-address .link:hover,
+.footer-address .link:focus {
+  color: var(--accent-color);
+}
+
+.footer-address .link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+/* portfolio */
+
+.button {
+  border: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+
+  color: var(--text-nav-title-color);
+  background-color: var(--section-background);
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.link .title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.link .title-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-text-color);
+}

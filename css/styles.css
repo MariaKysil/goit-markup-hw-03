@@ -1,6 +1,7 @@
 .page {
   color: var(--primary-text-color);
   font-family: 'Roboto', sans-serif;
+  margin: 0;
 }
 
 :root {
@@ -16,6 +17,8 @@
 
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .link {
@@ -28,7 +31,35 @@
   color: var(--text-nav-title-color);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+}
+
+/* styles for container */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 4px solid #ff6347;
+}
+
 /* header */
+.navigation {
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .part-logo {
   font-family: 'Raleway', sans-serif;
 
@@ -36,6 +67,8 @@
 }
 
 .logo {
+  margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -51,6 +84,7 @@
 }
 
 .site-nav {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -61,12 +95,17 @@
   color: var(--text-nav-title-color);
 }
 
+.site-nav li {
+  margin-right: 50px;
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
 }
 
 .nav-address {
+  display: flex;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
@@ -74,6 +113,7 @@
 }
 
 .nav-address .link {
+  margin-right: 50px;
   font-style: normal;
 
   color: var(--primary-text-color);
@@ -88,7 +128,17 @@
 /* hero */
 .hero {
   background-color: var(--background);
-  /* text-align: center; */
+  text-align: center;
+}
+
+.hero-position {
+  max-width: 1600px;
+  height: 600px;
+  padding-left: 452px;
+  padding-right: 452px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -108,7 +158,6 @@
   font-size: 16px;
   line-height: 1.9;
   text-align: center;
-  align-items: center;
   letter-spacing: 0.06em;
 
   color: var(--white-color);
@@ -117,7 +166,25 @@
 /* section advantages */
 
 .visually-hidden {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-advantages {
+  display: flex;
+}
+
+.advantages {
+  margin-bottom: 94px;
 }
 
 .advantages .title {
@@ -144,6 +211,10 @@
 }
 
 /* section occupation */
+.occupation {
+  margin-bottom: 50px;
+}
+
 .occupation .title,
 .team .main-title {
   font-weight: 700;
@@ -153,7 +224,14 @@
   letter-spacing: 0.03em;
 }
 
+.list-occupation {
+  display: flex;
+}
+
 /* section team */
+.list-team {
+  display: flex;
+}
 
 .team .sub-title {
   font-weight: 500;
@@ -213,6 +291,19 @@
 }
 
 /* portfolio */
+.item * {
+  outline: solid tomato;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list-position {
+  display: flex;
+}
 
 .button {
   border: none;
@@ -243,4 +334,36 @@
   letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
+}
+
+.button-position {
+  margin-bottom: 34px;
+}
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  outline: 3px solid teal;
+  padding: 0;
+  margin: 0;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+
+.card-set > .item {
+  outline: 3px solid black;
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.card-text {
+  margin-top: 4px;
+}
+
+.card-content {
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-bottom: 20px;
 }

@@ -49,10 +49,15 @@ h6 {
   width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 4px solid #ff6347;
 }
 
 /* header */
+.header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .navigation {
   display: flex;
   align-items: center;
@@ -95,7 +100,7 @@ h6 {
   color: var(--text-nav-title-color);
 }
 
-.site-nav li {
+.site-nav > li {
   margin-right: 50px;
 }
 
@@ -104,15 +109,16 @@ h6 {
   color: var(--accent-color);
 }
 
-.nav-address {
+.container > .nav-address {
   display: flex;
+  justify-content: end;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
 }
 
-.nav-address .link {
+.nav-address > .link:not(:last-child) {
   margin-right: 50px;
   font-style: normal;
 
@@ -124,16 +130,21 @@ h6 {
   color: var(--accent-color);
 }
 
+address > .link {
+  font-style: normal;
+  color: var(--primary-text-color);
+}
+
 /* main */
 /* hero */
 .hero {
   background-color: var(--background);
   text-align: center;
+  min-width: 1600px;
+  max-height: 600px;
 }
 
 .hero-position {
-  max-width: 1600px;
-  height: 600px;
   padding-left: 452px;
   padding-right: 452px;
   padding-top: 200px;
@@ -142,6 +153,7 @@ h6 {
 }
 
 .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.3;
@@ -153,6 +165,12 @@ h6 {
 }
 
 .hero-text {
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
+
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
@@ -183,11 +201,16 @@ h6 {
   display: flex;
 }
 
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .advantages {
   margin-bottom: 94px;
 }
 
 .advantages .title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
@@ -212,11 +235,13 @@ h6 {
 
 /* section occupation */
 .occupation {
-  margin-bottom: 50px;
+  margin-bottom: 94px;
 }
 
 .occupation .title,
 .team .main-title {
+  padding-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.7;
@@ -224,8 +249,16 @@ h6 {
   letter-spacing: 0.03em;
 }
 
+.container > .main-title {
+  padding-top: 94px;
+}
+
 .list-occupation {
   display: flex;
+}
+
+.occupation-item:not(:last-child) {
+  padding-right: 30px;
 }
 
 /* section team */
@@ -241,6 +274,7 @@ h6 {
 }
 
 .team {
+  min-height: 648px;
   background-color: var(--section-background);
 }
 
@@ -251,13 +285,30 @@ h6 {
   letter-spacing: 0.03em;
 }
 
+.team-item {
+  text-align: center;
+  background: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* footer */
 
 .footer {
+  min-height: 252px;
   background-color: var(--background);
 }
 
 .footer-logo {
+  display: block;
+  padding-left: 215px;
+  padding-top: 60px;
+  margin-bottom: 50px;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
 
@@ -265,6 +316,9 @@ h6 {
 }
 
 .footer-text {
+  padding-left: 215px;
+  margin-bottom: 9px;
+
   font-weight: normal;
   font-size: 14px;
   font-style: normal;
@@ -273,6 +327,8 @@ h6 {
 }
 
 .footer-address .link {
+  display: block;
+  padding-left: 215px;
   font-style: normal;
 
   color: var(--fotter-contacts);
@@ -291,22 +347,31 @@ h6 {
 }
 
 /* portfolio */
-.item * {
-  outline: solid tomato;
-}
-
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
+.header-portfolio {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+
 .list-position {
   display: flex;
+  justify-content: center;
+  margin-top: 66px;
+  margin-bottom: 56px;
 }
 
 .button {
   border: none;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-right: 8px;
+
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -336,22 +401,18 @@ img {
   color: var(--primary-text-color);
 }
 
-.button-position {
-  margin-bottom: 34px;
-}
-
+/* card set */
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  outline: 3px solid teal;
   padding: 0;
   margin: 0;
   margin-left: -30px;
   margin-top: -30px;
+  margin-bottom: 128px;
 }
 
 .card-set > .item {
-  outline: 3px solid black;
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;

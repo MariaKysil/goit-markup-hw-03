@@ -135,7 +135,7 @@ h6 {
   color: var(--accent-color);
 }
 
-ul > .link {
+address > .link {
   font-style: normal;
   color: var(--primary-text-color);
 }

@@ -125,12 +125,17 @@ h6 {
   color: var(--primary-text-color);
 }
 
+.nav-address > .link {
+  font-style: normal;
+  color: var(--primary-text-color);
+}
+
 .nav-address .link:hover,
 .nav-address .link:focus {
   color: var(--accent-color);
 }
 
-address > .link {
+ul > .link {
   font-style: normal;
   color: var(--primary-text-color);
 }
@@ -308,7 +313,7 @@ address > .link {
   display: block;
   padding-left: 215px;
   padding-top: 60px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
 
@@ -366,6 +371,7 @@ img {
 
 .button {
   border: none;
+  border-radius: 4px;
   padding-left: 22px;
   padding-right: 22px;
   padding-top: 6px;

@@ -312,9 +312,8 @@ h6 {
 }
 
 .footer-logo {
-  display: block;
-  padding-left: 215px;
-  padding-bottom: 20px;
+  display: inline-block;
+  margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
 
@@ -322,9 +321,7 @@ h6 {
 }
 
 .footer-text {
-  padding-left: 215px;
   margin-bottom: 9px;
-
   font-weight: normal;
   font-size: 14px;
   font-style: normal;
@@ -334,7 +331,6 @@ h6 {
 
 .footer-address .link {
   display: block;
-  padding-left: 215px;
   font-style: normal;
 
   color: var(--fotter-contacts);

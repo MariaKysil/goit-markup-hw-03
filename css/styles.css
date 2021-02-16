@@ -313,8 +313,8 @@ h6 {
 
 .footer-logo {
   display: block;
-  margin-left: 215px;
-  margin-bottom: 20px;
+  padding-left: 215px;
+  padding-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
 

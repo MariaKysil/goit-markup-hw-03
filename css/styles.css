@@ -61,10 +61,9 @@ h6 {
 .navigation {
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
+/* header logo */
 .part-logo {
   font-family: 'Raleway', sans-serif;
 
@@ -83,7 +82,7 @@ h6 {
   color: var(--logo);
 }
 
-/* site nav */
+/* main site nav without navigation address */
 .site-nav .link.current {
   color: var(--accent-color);
 }
@@ -98,9 +97,12 @@ h6 {
 
 .site-nav .link {
   color: var(--text-nav-title-color);
+  display: inline-block;
+  padding-top: 34px;
+  padding-bottom: 30px;
 }
 
-.site-nav > li {
+.site-nav > li:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -109,6 +111,7 @@ h6 {
   color: var(--accent-color);
 }
 
+/* navigation address */
 .container > .nav-address {
   display: flex;
   justify-content: end;
@@ -118,26 +121,23 @@ h6 {
   letter-spacing: 0.02em;
 }
 
-.nav-address > .link:not(:last-child) {
+.address-item:not(:last-child) {
   margin-right: 50px;
-  font-style: normal;
+}
 
+.nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  font-style: normal;
   color: var(--primary-text-color);
 }
 
-.nav-address > .link {
-  font-style: normal;
-  color: var(--primary-text-color);
-}
-
-.nav-address .link:hover,
-.nav-address .link:focus {
+.nav-address .nav-link:hover,
+.nav-address .nav-link:focus {
   color: var(--accent-color);
-}
-
-address > .link {
-  font-style: normal;
-  color: var(--primary-text-color);
 }
 
 /* main */
@@ -154,7 +154,6 @@ address > .link {
   padding-right: 452px;
   padding-top: 200px;
   padding-bottom: 200px;
-  margin-bottom: 94px;
 }
 
 .hero-title {
@@ -211,7 +210,8 @@ address > .link {
 }
 
 .advantages {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages .title {
@@ -240,7 +240,7 @@ address > .link {
 
 /* section occupation */
 .occupation {
-  margin-bottom: 94px;
+  padding-bottom: 94px;
 }
 
 .occupation .title,
@@ -254,10 +254,6 @@ address > .link {
   letter-spacing: 0.03em;
 }
 
-.container > .main-title {
-  padding-top: 94px;
-}
-
 .list-occupation {
   display: flex;
 }
@@ -267,6 +263,10 @@ address > .link {
 }
 
 /* section team */
+.container > .main-title {
+  padding-top: 94px;
+}
+
 .list-team {
   display: flex;
 }
@@ -279,6 +279,7 @@ address > .link {
 }
 
 .team {
+  padding-bottom: 94px;
   min-height: 648px;
   background-color: var(--section-background);
 }
@@ -305,14 +306,14 @@ address > .link {
 /* footer */
 
 .footer {
+  padding-top: 60px;
   min-height: 252px;
   background-color: var(--background);
 }
 
 .footer-logo {
   display: block;
-  padding-left: 215px;
-  padding-top: 60px;
+  margin-left: 215px;
   margin-bottom: 20px;
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
